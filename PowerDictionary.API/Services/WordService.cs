@@ -14,6 +14,11 @@ public class WordService
         _httpClient.BaseAddress = new Uri("https://www.dicio.com.br");
     }
 
+    /**
+     * Faz o download do html da página requerida e utiliza o Html Agility Pack
+     * para navegar pelo do DOM e extrair os dados como classe gramatical, significados e etimologia da
+     * palavra.
+     */
     public async Task<WordDescription> GetWordDescription(string word)
     {
         var htmlContent = await _httpClient.GetStringAsync($"{_httpClient.BaseAddress}{word}");
