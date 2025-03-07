@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerDictionary.API", "PowerDictionary.API\PowerDictionary.API.csproj", "{FC3C2B0C-574E-4FDE-9D0C-465311300FFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC3C2B0C-574E-4FDE-9D0C-465311300FFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC3C2B0C-574E-4FDE-9D0C-465311300FFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC3C2B0C-574E-4FDE-9D0C-465311300FFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC3C2B0C-574E-4FDE-9D0C-465311300FFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
