@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using PowerDictionary.Web.Extensions;
 
 namespace PowerDictionary.Web.Pages;
 
