@@ -1,3 +1,4 @@
+using System.Net;
 using HtmlAgilityPack;
 using PowerDictionary.API.Entities;
 using PowerDictionary.API.Exceptions;
@@ -21,7 +22,12 @@ public class WordService
      */
     public async Task<WordDescription> GetWordDescription(string word)
     {
-        var htmlContent = await _httpClient.GetStringAsync($"{_httpClient.BaseAddress}{word}");
+        var response = await _httpClient.GetAsync($"{_httpClient.BaseAddress}{word}");
+
+        if (response.StatusCode == HttpStatusCode.NotFound)
+            throw new WordNotFoundException($"A palavra {word} não foi encontrada.");
+        
+        var htmlContent = await response.Content.ReadAsStringAsync();
         var htmlDocument = new HtmlDocument();
         htmlDocument.LoadHtml(htmlContent);
 

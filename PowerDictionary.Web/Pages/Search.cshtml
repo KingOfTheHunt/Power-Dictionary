@@ -8,4 +8,17 @@
 
 <div class="text-center">
     <h1>Palavra pesquisada: @Model.SearchedWord</h1>
+    <p>Classe gramatical: @Model.Word.GrammarClass</p>
+    <p>
+        Significados:
+        <ul>
+            @foreach (var meaning in Model.Word.Meanings)
+            {
+                <li>@meaning</li>
+            }
+        </ul>
+    </p>
+    <p>
+        Etimologia: @Model.Word.Etymology
+    </p>
 </div>
