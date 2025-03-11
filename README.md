@@ -19,7 +19,7 @@ Também aprendi como configurar o CORS para permitir que o front-end faça requi
 
 ## Screenshots
 
-![image-1](./images/power-dictionary-1)
+![image-1](https://github.com/KingOfTheHunt/Power-Dictionary/blob/main/images/power-dictionary-1.png)
 
-![image-2](./images/power-dictionary-2)
+![image-2](https://github.com/KingOfTheHunt/Power-Dictionary/blob/main/images/power-dictionary-2.png)
 
